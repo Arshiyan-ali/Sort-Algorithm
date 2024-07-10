@@ -1,13 +1,13 @@
 void main(){
 
   
-  List num=[1,2,3,4,5,6,7];
+  List num=[5,4,3,2,1];
   for(int i=0;i<num.length;i++){
     for(int j=0;j<num.length;j++){
-      if (num[j]<num[i]) {
-        int rem=num[j];
-        num[j]=num[i];
-        num[i]=rem;
+      if (num[i]<num[j]) {
+        int rem=num[i];
+        num[i]=num[j];
+        num[j]=rem;
 
         
         
@@ -16,3 +16,6 @@ void main(){
   }
   print(num);
 }
+
+
+// output:[1,2,3,4,5]
